@@ -1,0 +1,56 @@
+.report{
+    padding-left: 2rem;
+    padding-top: 4rem;
+}
+.probar{
+    height: 200px;
+    width: 200px;
+}
+.CircularProgressbar .CircularProgressbar-text{
+    font-size: 10px;
+}
+.main_rep_up{
+    padding-top: 3rem;
+    display: flex;
+    gap: 3rem;
+}
+.left_rep{
+    height: 400px;
+    width: 400px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    /* border: 1px solid #999; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0px 0px 74px -17px rgba(0, 0, 0, 0.2);
+}
+
+.subject_rep{
+    width: 180px;
+    height: 180px;
+    /* border: 1px solid#999; */
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 74px -17px rgba(0, 0, 0, 0.2);
+}
+.right_rep{
+    display: grid;
+    grid-template-columns:repeat(2 ,1fr);
+    gap: 2.5rem;
+}
+.rep_dub{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

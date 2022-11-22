@@ -1,0 +1,23 @@
+.board{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+
+.student_profile{
+    width: 20rem;
+    padding: 0.5rem 2rem 1rem 0.5rem;
+    border: 1px solid #999;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 2rem;
+}

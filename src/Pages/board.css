@@ -1,0 +1,55 @@
+.top_m{
+    padding-top: 6rem;
+    display: grid;
+    gap: 2rem;
+}
+.main_board{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.board_main{
+    display: flex;
+    width: 530px;
+    height: 439px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 74px -17px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.left_board{
+    display: grid;
+    gap: 2rem;
+}
+
+.board_main_r{
+    width: 433px;
+    height: 439px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 74px -17px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.col_1{
+    width: 139.74px;
+    height: 180.09px;
+    position: relative;
+    bottom: -260px;
+    background: linear-gradient(123.78deg, #FFFFFF -3.85%, #FF9090 47.07%, #FF0C0C 102.16%);
+}
+.col_2{
+    width: 139.74px;
+    height: 225.36px;
+    margin-left: 8.7rem;
+    position: relative;
+    bottom: -2.2rem;
+    background: linear-gradient(194.27deg, #FFFFFF -10.35%, #FF9090 62.81%, #FF0C0C 141.98%);
+}
+.col_3{
+    width: 139.74px;
+    height: 145.65px;
+    position: relative;
+    bottom: 6.9rem;
+    margin-left: 17rem;
+    background: linear-gradient(269.97deg, #FFFFFF 0.01%, #FF9090 60.19%, #FF0C0C 125.31%);
+}

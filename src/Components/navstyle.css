@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .input{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    appearance: none;
+} */
+/* .content{
+    display: flex;
+    justify-content: center;
+} */
+input{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    appearance: none;
+    border: 1px solid black;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    border-bottom: 1px solid #999;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    gap: 1rem;
+}

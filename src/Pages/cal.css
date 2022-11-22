@@ -1,0 +1,8 @@
+.react-calendar__month-view{
+    height: 21.2rem;
+    width: 25rem;
+}
+.react-calendar{
+    width: 25rem !important;
+    border-radius: 10px;
+}

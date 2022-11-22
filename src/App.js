@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  useRoutes
+} from "react-router-dom";
+import Home from './Components/Home';
+import Dash from './Pages/Dash';
+import Event from './Pages/Event';
+import BoardAtten from './Pages/BoardAtten';
+import ExamReport from './Pages/ExamReport';
 
 function App() {
+
+  const route = useRoutes(
+    [
+      { path: '/', element: <Home /> ,children:[{path:'/dash', element:<Dash/>},{path:'/event',element:<Event/>},{path:'/attendance',element:<BoardAtten/>},{path:'/exam',element:<ExamReport/>}],},
+      
+    ]
+  )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      {route}
+
+    </>
   );
 }
-
 export default App;
+
+

@@ -1,0 +1,15 @@
+.featureChart{
+    width: 10rem;
+    height: 10rem;
+    color: brown;
+}
+.CircularProgressbar .CircularProgressbar-path{
+    stroke: rgb(237, 113, 113) !important;
+}
+.CircularProgressbar .CircularProgressbar-text{
+    fill: black !important;
+}
+.chart_h{
+    display: grid;
+    gap: 2rem;
+}
