@@ -1,6 +1,5 @@
 import React from 'react'
 import './leader.css';
-import { BiCircle } from 'react-icons/bi';
 const LeaderBoard = () => {
     return (
         <div className='board'>

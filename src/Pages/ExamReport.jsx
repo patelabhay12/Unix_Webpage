@@ -1,53 +1,13 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import './exam.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-// import {Bar } from 'react-chartjs-2';
-import { BarChart } from 'recharts';
+import ExamData from './ExamData';
+import LeaderBoard from './LeaderBoard';
 
-
-const Data = [
-    {
-      id: 1,
-      year: 2016,
-      userGain: 80000,
-      userLost: 823
-    },
-    {
-      id: 2,
-      year: 2017,
-      userGain: 45677,
-      userLost: 345
-    },
-    {
-      id: 3,
-      year: 2018,
-      userGain: 78888,
-      userLost: 555
-    },
-    {
-      id: 4,
-      year: 2019,
-      userGain: 90000,
-      userLost: 4555
-    },
-    {
-      id: 5,
-      year: 2020,
-      userGain: 4300,
-      userLost: 234
-    }
-  ];
 
 const ExamReport = () => {
     const percentage = 66;
-    const [UserData, setUsertData] = useState({
-        labels:UserData.map((data)=>data.year),
-        datasets: [{
-            label: "User Gained",
-            data:UserData.map((data)=>data.userGain),
-        }]
-    });
     return (
         <div className='report'>
             <h4>Unit Test 1 report...</h4>
@@ -59,34 +19,42 @@ const ExamReport = () => {
                     <h3>360/1000</h3>
                 </div>
                 <div className="right_rep">
-                    <div className="subject_rep">
-                        <div className='rep_dub'>
-                            <h4>30/100</h4>
-                            <span>Science</span>
-                        </div>
-                    </div>
-                    <div className="subject_rep">
-                        <div className='rep_dub'>
-                            <h4>40/100</h4>
-                            <span>Math</span>
-                        </div>
-                    </div>
-                    <div className="subject_rep">
-                        <div className='rep_dub'>
-                            <h4>70/100</h4>
-                            <span>English</span>
-                        </div>
-                    </div>
-                    <div className="subject_rep">
-                        <div className='rep_dub'>
-                            <h4>20/100</h4>
-                            <span>Hindi</span>
-                        </div>
-                    </div>
+                    {
+                        ExamData.map((item, value) => {
+                            return (
+                                <div className="subject_rep">
+                                    <div className='rep_dub'>
+                                        <h4>{item.ob}/{item.to}</h4>
+                                        <span>{item.subject}</span>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
-            <div className="chart_h">
-                {/* <BarChart data={UserData}   /> */}
+
+
+            <div className="bar_chart">
+
+            </div>
+
+            <div className="main_leader_board">
+                <h4>LeaderBoard</h4>
+                <div className="leader_board">
+
+                    <div className="left_board">
+                        <LeaderBoard />
+                        <LeaderBoard />
+                        <LeaderBoard />
+                        <LeaderBoard />
+                    </div>
+                    <div className="board_main_r">
+                            <div className="col_1"></div>
+                            <div className="col_2"></div>
+                            <div className="col_3"></div>
+                    </div>
+                </div>
             </div>
         </div>
     )
